@@ -1,0 +1,9 @@
+# Node build artifacts
+node_modules
+npm-debug.log
+
+# Local development
+.DS_Store
+
+# Execution resources
+log
