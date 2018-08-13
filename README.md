@@ -6,11 +6,10 @@ Add the client to your project by running:<br/>
 
 ## Usage
 
-1) Instatiate the CometD client
+1) Instantiate the CometD client
 
 1.a) with the default console logger:
 ```js
-// 
 const cometd = new CometdClient());
 ```
 
@@ -45,7 +44,7 @@ cometd.connect().then(() => {
 
 The `onMessageReceived` callback function is executed each time a `topicName` message is received.
 
-Alternatively you can batch subscriptions:
+Alternatively, you can batch subscriptions (network optimization):
 ```js
 const cometdPromises = [
     cometd.subscribe(topic1, onMessage1Received),
@@ -56,7 +55,7 @@ cometd.batch(cometdPromises).then(() => {
 });
 ```
 
-4) If you wish to unsusbribe from a topic:
+4) If you wish to unsubscribe from a topic:
 ```js
 cometd.unsubscribe(subscription).then(() => {
     // This promise resolves when the client has succesfully unsubscribed
@@ -70,4 +69,4 @@ cometd.disconnect().then(() => {
 });
 ```
 
-Disconnect unsubscribes from all subscriptions.
+`disconnect()` unsubscribes from all active subscriptions.
