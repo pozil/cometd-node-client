@@ -10,7 +10,7 @@ Add the client to your project by running:<br/>
 
 1.a) with the default console logger:
 ```js
-const cometd = new CometdClient());
+const cometd = new CometdClient();
 ```
 
 OR
