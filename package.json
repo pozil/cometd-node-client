@@ -21,6 +21,7 @@
   ],
   "author": "Philippe Ozil",
   "license": "Apache-2.0",
+  "main": "src/cometd-client.js",
   "bugs": {
     "url": "https://github.com/pozil/cometd-node-client/issues"
   },
