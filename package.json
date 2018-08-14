@@ -1,6 +1,6 @@
 {
   "name": "cometd-node-promise-client",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "CometD client for Node.js that adds support for promises",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
