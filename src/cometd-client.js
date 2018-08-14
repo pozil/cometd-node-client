@@ -6,7 +6,7 @@ require('cometd-nodejs-client').adapt();
 const cometdlib = require('cometd');
 
 
-export default class CometdClient {
+module.exports = class CometdClient {
 
   constructor(logger = console) {
     this.logger = logger;
